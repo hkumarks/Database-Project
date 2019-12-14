@@ -1,0 +1,102 @@
+<head>
+    <title>Barcelona</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/accomodation-style.css')}}" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="text-center">
+            <h2>Type of accomodation</h2>
+            <h4>Choose a payment plan that works for you</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h1>Basic</h1>
+                    </div>
+                    <div>
+                        <form class="form-inline" action="#" method="post">
+                            <input type="hidden" name="service type" value="basic">
+                            <div class="input-group">
+                                <h3>Start Date</h3>
+                                <input type="date" class="form-control" name="startdate" placeholder="startdate" required><br><br>
+                                <h3>End Date</h3>
+                                <input type="date" class="form-control" name="enddate" placeholder="enddate" required><br><br>
+                                <h3>Enter the number of people</h3>
+                                <input type="number" class="form-control" name="numofppl" placeholder="       No. of people" required><br>
+                                <br><br>
+                                <h3>₹5181</h3>
+                                <h4>per day</h4><br>
+
+                                <input class="btn btn-lg" type="submit" value="Book">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-default text-center">
+                        <div class="panel-heading">
+                            <h1>Pro</h1>
+                        </div>
+                        <div>
+                            <form class="form-inline" action="#" method="post">
+                                <input type="hidden" name="service type" value="pro">
+                                <div class="input-group">
+                                    <h3>Start Date</h3>
+                                    <input type="date" class="form-control" name="startdate" placeholder="startdate" required><br><br>
+                                    <h3>End Date</h3>
+                                    <input type="date" class="form-control" name="enddate" placeholder="enddate" required><br><br>
+                                    <h3>Enter the number of people</h3>
+                                    <input type="number" class="form-control" name="numofppl" placeholder="       No. of people" required><br>
+                                    <br><br>
+                                    <h3>₹7986</h3>
+                                    <h4>per day</h4><br>
+
+                                    <input class="btn btn-lg" type="submit" value="Book">
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-default text-center">
+                            <div class="panel-heading">
+                                <h1>Premium</h1>
+                            </div>
+                            <div>
+                                <form class="form-inline" action="#" method="post">
+                                    <input type="hidden" name="service type" value="premium">
+                                    <div class="input-group">
+                                        <h3>Start Date</h3>
+                                        <input type="date" class="form-control" name="startdate" placeholder="startdate" required><br><br>
+                                        <h3>End Date</h3>
+                                        <input type="date" class="form-control" name="enddate" placeholder="enddate" required><br><br>
+                                        <h3>Enter the number of people</h3>
+                                        <input type="number" class="form-control" name="numofppl" placeholder="       No. of people" required><br>
+                                        <br><br>
+                                        <h3>₹22140</h3>
+                                        <h4>per day</h4><br>
+
+                                        <input class="btn btn-lg" type="submit" value="Book">
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>

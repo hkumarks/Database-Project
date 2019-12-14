@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <style>
+        .boby {
+            background: url('../images/bg.jpg') no-repeat 0% 87% fixed;
+            background-size: cover;
+        }
+        
+        .container {
+            background-color: #f2f2f2;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+            width: 40%;
+            height: 85%;
+            margin-left: 400px;
+        }
+        
+        .main {
+            font-size: 1.5em;
+        }
+        
+        .btn-group .button {
+            background-color: rgb(108, 114, 108);
+            /* Green */
+            border: 1px solid rgb(0, 0, 0);
+            color: white;
+            padding: 15px 122px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+        }
+        
+        .btn-group .button:not(:last-child) {
+            border-right: none;
+            /* Prevent double borders */
+        }
+        
+        .btn-group .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body class='boby'>
+    <div class='container'>
+        <div class='main'>
+            <p>Name : <i><font color="red">{{n}}</font></i></p>
+            <p>Email : <i><font color="red">{{e}}</font></i></p>
+            <p>Mobile Number : <i><font color="red">{{m}}</font></i></p>
+            <p>Departure : <i><font color="red">{{dep}}</font></i></p>
+            <p>Destination : <i><font color="red">{{des}}</font></i></p>
+            <p>Date : <i><font color="red">{{date}}</font></i></p>
+            <p>Time : <i><font color="red">6:00AM</font></i></p>
+            <p>Accommodation Number : <i><font color="red">{{a}}</font></i></p>
+            <p>Service Type : <i><font color="red">{{ser}}</font></i></p>
+            <p>Number of people : <i><font color="red">{{num}}</font></i></p>
+            <br>
+            <div class="btn-group">
+                <center><a href="{{url_for('payment2')}}"><button class="button">Confirm</button></a></center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
