@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prediction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="{{url_for('static',filename='images/icons/favicon.ico')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/animate/animate.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/animsition/css/animsition.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/select2/select2.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/daterangepicker/daterangepicker.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{url_for('static',filename='css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/main.css')}}" >
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" method="POST" action='#'>
+				<span class="contact100-form-title">
+					IPL First Innings Score Prediction
+				</span>
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Batting Team</span>
+					<div>
+						<select class="selection-2" name="bat">
+
+							<option value="" selected data-default>Batting Team</option>
+                            <option value="Chennai Super Kings">Chennai Super Kings</option>
+                            <option value="Delhi Daredevils">Delhi Daredevils</option>
+                            <option value="Kings XI Punjab">Kings XI Punjab</option>
+                            <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                            <option value="Mumbai Indians">Mumbai Indians</option>
+                            <option value="Rajasthan Royals">Rajasthan Royals</option>
+                            <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Bowling Team</span>
+					<div>
+						<select class="selection-2" name="bowl">
+							
+							<option value="" selected data-default>Bowling Team</option>
+							<option value="Chennai Super Kings">Chennai Super Kings</option>
+                            <option value="Delhi Daredevils">Delhi Daredevils</option>
+                            <option value="Kings XI Punjab">Kings XI Punjab</option>
+                            <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                            <option value="Mumbai Indians">Mumbai Indians</option>
+                            <option value="Rajasthan Royals">Rajasthan Royals</option>
+                            <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                            <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Runs is required">
+					<span class="label-input100">Runs Scored</span>
+					<input class="input100" type="text" name="runs" placeholder="Enter the runs scored">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid wickets is required">
+					<span class="label-input100">Wickets Fallen</span>
+					<input class="input100" type="text" name="wickets" placeholder="No. of wickets fallen">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid overs is required">
+					<span class="label-input100">Overs Bowled</span>
+					<input class="input100" type="text" name="overs" placeholder="No. of overs finished">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid runs is required">
+					<span class="label-input100">Runs Scored in Last 5 Overs</span>
+					<input class="input100" type="text" name="rl5" placeholder="Runs Scored in Last 5 Overs">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid wickets is required">
+					<span class="label-input100">Wicket Fallen in Last 5 Overs</span>
+					<input class="input100" type="text" name="wl5" placeholder="Wicket Fallen in Last 5 Overs">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Venue</span>
+					<div>
+						<select class="selection-2" name="venue">
+							<option value="" selected data-default>Select Stadium</option>
+							<option value="M Chinnaswamy Stadium">M Chinnaswamy Stadium</option>
+							<option value="Punjab Cricket Association Stadium, Mohali">Punjab Cricket Association Stadium, Mohali</option>
+							<option value="Feroz Shah Kotla">Feroz Shah Kotla</option>
+							<option value="Wankhede Stadium">Wankhede Stadium</option>
+							<option value="Eden Gardens">Eden Gardens</option>
+							<option value="Sawai Mansingh Stadium">Sawai Mansingh Stadium</option>
+							<option value="Rajiv Gandhi International Stadium, Uppal">Rajiv Gandhi International Stadium, Uppal</option>
+							<option value="MA Chidambaram Stadium, Chepauk">MA Chidambaram Stadium, Chepauk</option>
+							<option value="Dr DY Patil Sports Academy">Dr DY Patil Sports Academy</option>
+							<option value="Newlands">Newlands</option>
+							<option value="St George's Park">St George's Park</option>
+							<option value="Kingsmead">Kingsmead</option>
+							<option value="SuperSport Park">SuperSport Park</option>
+							<option value="Buffalo Park">Buffalo Park</option>
+							<option value="New Wanderers Stadium">New Wanderers Stadium</option>
+							<option value="De Beers Diamond Oval">De Beers Diamond Oval</option>
+							<option value="OUTsurance Oval">OUTsurance Oval</option>
+							<option value="Brabourne Stadium">Brabourne Stadium</option>
+							<option value="Sardar Patel Stadium, Motera">Sardar Patel Stadium, Motera</option>
+							<option value="Barabati Stadium">Barabati Stadium</option>
+							<option value="Vidarbha Cricket Association Stadium, Jamtha">Vidarbha Cricket Association Stadium, Jamtha</option>
+							<option value="Himachal Pradesh Cricket Association Stadium">Himachal Pradesh Cricket Association Stadium</option>
+							<option value="Nehru Stadium">Nehru Stadium</option>
+							<option value="Holkar Cricket Stadium">Holkar Cricket Stadium</option>
+							<option value="Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium">Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium</option>
+							<option value="Subrata Roy Sahara Stadium">Subrata Roy Sahara Stadium</option>
+							<option value="Shaheed Veer Narayan Singh International Stadium">Shaheed Veer Narayan Singh International Stadium</option>
+							<option value="JSCA International Stadium Complex">JSCA International Stadium Complex</option>
+							<option value="Sheikh Zayed Stadium">Sheikh Zayed Stadium</option>
+							<option value="Sharjah Cricket Stadium">Sharjah Cricket Stadium</option>
+							<option value="Dubai International Cricket Stadium">Dubai International Cricket Stadium</option>
+							<option value="Maharashtra Cricket Association Stadium">Maharashtra Cricket Association Stadium</option>
+							<option value="Punjab Cricket Association IS Bindra Stadium, Mohali">Punjab Cricket Association IS Bindra Stadium, Mohali</option>
+							<option value="Saurashtra Cricket Association Stadium">Saurashtra Cricket Association Stadium</option>
+							<option value="Green Park">Green Park</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<!-- <button class="contact100-form-btn">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button> -->
+						<input class="input100" type="submit" value="Predict">
+					</div>
+					
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
