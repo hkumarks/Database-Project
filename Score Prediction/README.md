@@ -4,3 +4,7 @@ For building the model I had considered 5 algorithms, among them Linear Regressi
 
 Run The webpage.py to use this application.
 ![Homepage](https://github.com/hkumarks/Project/blob/master/Score%20Prediction/homepage.JPG?raw=true)
+
+![Homepage](https://github.com/hkumarks/Project/blob/master/Score%20Prediction/home1.JPG?raw=true)
+
+![Prediction](https://github.com/hkumarks/Project/blob/master/Score%20Prediction/prediction.JPG?raw=true)
