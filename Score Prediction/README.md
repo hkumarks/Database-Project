@@ -3,3 +3,4 @@ The data had to be cleaned since there were quite a few unwanted features. The i
 For building the model I had considered 5 algorithms, among them Linear Regression was giving the best prediction. The model building process is in Model_Building file. Later the model is picked and it is used in HTML file to predict the score.
 
 Run The webpage.py to use this application.
+
